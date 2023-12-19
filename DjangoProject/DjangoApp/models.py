@@ -22,7 +22,7 @@ class Course(BaseModel):
     subject = models.CharField(max_length=255, null=False)
     description = models.CharField(max_length=255, null=False)
     image = models.CharField(max_length=255, null=False)
-    category = models.TextField(max_length=50, null=False)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
     tags = models.TextField(max_length=50, null=False)
 
     def __str__(self):

@@ -10,7 +10,7 @@ class CategoryAdmin(admin.ModelAdmin):
 
 
 class CourseAdmin(admin.ModelAdmin):
-    list_display = ['pk', 'subject', 'created_date', 'updated_date', 'category', 'active']
+    list_display = ['pk', 'subject', 'created_date', 'updated_date', 'active']
     readonly_fields = ['image']
 
 
